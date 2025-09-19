@@ -1,6 +1,16 @@
-name = "booking-ui"
+name = "sfero-worker"
 main = "worker.js"
-compatibility_date = "2024-09-01"
-[assets]
-directory = "dist/spa"
-binding = "ASSETS"
+compatibility_date = "2023-01-01"
+
+[vars]
+SUPABASE_URL = ""
+SUPABASE_ANON_KEY = ""
+BASE44_API_KEY = ""
+BASE44_APP_ID = ""
+
+[[kv_namespaces]]
+binding = "STATS"
+id = "13ab7c40-2ad6-4a2d-943d-8dd2859391a5"
+
+[site]
+bucket = "./spa"
